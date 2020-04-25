@@ -10,7 +10,7 @@
         /* div {
             object-fit: contain;
         } */
-        .video-wrapper {
+        /* .video-wrapper {
             position: relative;
         }
 
@@ -26,6 +26,21 @@
 
         .standard {
             padding-bottom: 75%;
+        } */
+
+        .embedresize {
+            max-width: 560px;
+            margin: auto;
+        }
+
+
+
+        .embedresize iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -33,10 +48,14 @@
 </head>
 
 <body>
-
-    <div class="video-wrapper standard">
-        <iframe src="higherlove.mp4" ; frameborder="0" allowfullscreen playsinline></iframe>
+    <div class="embedresize">
+        <div>
+            <iframe allowfullscreen="" frameborder="0" height="800px" src="higherlove.mp4" playsinline></iframe>
+        </div>
     </div>
+    <!-- <div class="video-wrapper standard">
+        <iframe  src="higherlove.mp4" ; frameborder="0" allow playsinline></iframe>
+    </div> -->
     <!-- <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="higherlove.mp4" playsinline></iframe>
     </div> -->
